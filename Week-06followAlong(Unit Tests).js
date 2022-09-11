@@ -13,3 +13,10 @@ console.log(`Let's talk about unit tests`);
 //Many different tools and framework for writing unity tests, but two of the most common frameworks that work together for testing JS are "Mocha" and "Chai".
 
 //In order to use these, we have to use NPM(node package manager) to install them.
+
+function doSomething(x, y) {
+    if (typeof x != 'string') {
+        thow new Error('x must be a string');
+    }
+    return x + y;
+}
